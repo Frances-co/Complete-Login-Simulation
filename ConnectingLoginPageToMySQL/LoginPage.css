@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+   }
+   
+   body {
+    background-image: url(BGround.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+   }
+   
+   /* The Form is inside a another div with id="background"
+      This div is centered using the margin: auto; of the body. The div is affected by this margin cuz it's a block element by
+      default.
+      Then we put our form Inside this div. So during zooming, the form container will zoom as well rather than only zooming
+      form's elements.
+   */
+   #form {
+    display:  block;
+    width: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: whitesmoke;
+    border-width: 0.5px;
+    /* Transparent background */
+    backdrop-filter: blur(5px);
+   
+   }
+   
+   h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: auto;
+    margin: auto;
+   }
+   
+   .credentials {
+    margin-left: 15px;
+    background-color: rgba(0, 255, 255, 0.3);
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border-style: none;
+    padding-left: 10px;
+   }
+   
+   .input-fields{
+    margin-left: 75px;
+    width: 80%;
+   
+   }
+   
+   .rememMe {
+    text-decoration: none;
+    color: rgb(114, 107, 107);
+    font-weight: 550;
+    /* bold = 700*/
+    font-size: 15px;
+    margin: auto;
+    vertical-align: middle;
+    /*This vertical-align property is imp asf bcs
+    bcs of it, the checkbox and text besides it are
+    neatly justified next to each other; without it
+    , the text with in a level lower than the
+    check box*/
+   }
+   
+   #rememberMe {
+    justify-content: space-between;
+    /* border: solid 2px white; */
+    width: 260px;
+    display: flex;
+    margin: 0 240px;
+   }
+   
+   #submit {
+    width: 50%;
+    height: 30px;
+    margin: 0 25%;
+    margin-top: 10px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgba(245, 245, 245, 0.8);
+    color: rgb (5, 5, 5);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    transition: background-color 0.5s ease-out;
+    /* ease-out -> starts quickly and slows down as it reachs the end*/
+   }
+   
+   #submit:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+   }
+   
+   .outro {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 10px;
+   
+   }
+   
+   #outrDiv {
+    /* border: solid 2px white; */
+    /*I used the border to visualize the width
+    needed for the div abd thus the proper margin*/
+    width: 32%;
+    margin: 20px 31%;
+    display: flex;
+    justify-content: space-around;
+   }
+   
+   .underline {
+     text-decoration-line: none; /* Remove any initial underline */
+     transition: text-decoration-line 0.5s ease-out; /* Add the transition for smooth appearance */
+   }
+   
+   .underline:hover {
+     text-decoration-line: underline; /* Add the underline on hover */
+   }

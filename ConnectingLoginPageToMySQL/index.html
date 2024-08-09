@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+ <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Login</title>
+ <link href="LoginPage.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+ <div id="background">
+  <form action="#" method="POST" id="form">
+   <h3>Login</h3>
+   <br>
+
+
+   <!--It's id is "username", but I altered it to accept "emails", but I didn't change the id so I don't have to change the style file-->
+   <!-- The name parameter I add to the <input> is what I use with global php variables like $_POST -->
+   <div id="username" class="input-fields"> 
+    <input class="credentials" type="text" placeholder="Email" name="email">
+   </div>
+   <br>
+   <div id="password" class="input-fields">
+    <input class="credentials" type="password" placeholder="Password" name="password">
+   </div>
+  
+   <br>
+   <div id="rememberMe">
+    <label for="box" class="rememMe">
+     <input type="checkbox" id="box" name="rememMe" class="rememMe" value="yes">
+     Remember me
+    </label>
+    <a href="forgotPass.html" class="rememMe underline">Forgot Password?</a>
+   </div>
+   <br>
+   <div>
+    <input id="submit" type="submit" value="Login">
+   </div>
+   <div id="outrDiv">
+   <p class="outro">Don't have an account? </p>
+    <a href="register.html" class="outro underline">Register</a>
+   </div>
+  </form>
+ </div>
+ <script src="script.js"></script>
+</body>
+
+</html>
